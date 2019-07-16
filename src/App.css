@@ -1,12 +1,15 @@
 :root {
   --black: #0d0d0d;
-  --red: #ff2d2b;
+  --red: darkgoldenrod;
 }
 
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
+  background-image: url('Hogwarts crest grayfelt wp by kybrdgal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
@@ -34,24 +37,28 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: #693831;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: #2D4A1E;
 }
 
 .home__name,
 .away__name,
-.down__title,
-.toGo__title,
-.ballOn__title,
-.quarter__title {
+.homePenalty__title,
+.homeReplacement__title,
+.awayPenalty__title,
+.awayReplacement__title {
   text-transform: uppercase;
   font-size: 3rem;
   padding: 2rem;
 }
 
+.home__name,
+.away__name {
+  font-size: 2rem;
+}
 .home__score,
 .away__score {
   font-family: "Ozone";
@@ -80,20 +87,26 @@
   height: 20rem;
 }
 
-.down,
-.toGo,
-.ballOn,
-.quarter {
+.homePenalty,
+.homeReplacement,
+.awayPenalty,
+.awayReplacement {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
+  
 }
-
-.down__value,
-.toGo__value,
-.ballOn__value,
-.quarter__value {
+.homePenalty__title,
+.homeReplacement__title,
+.awayPenalty__title,
+.awayReplacement__title{
+  font-size: 1.8rem;
+}
+.homePenalty__value,
+.homeReplacement__value,
+.awayPenalty__value,
+.awayReplacement__value {
   font-family: "Ozone";
   font-size: 5rem;
   color: var(--red);
@@ -104,8 +117,15 @@
   border-radius: 4px;
   padding: 1.6rem;
   border: 1px solid white;
+
+}
+.gryffindor{
+  color: #693831;
 }
 
+.slytherin{
+  color: #2D4A1E
+}
 .buttons {
   width: 50%;
   margin: 0 auto;
